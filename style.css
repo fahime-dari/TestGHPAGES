@@ -6,6 +6,7 @@
 body { 
 	font-family: 'Arial';
 	margin: 0;
+	font-size: 16px;
 }
 
 html {
@@ -14,19 +15,20 @@ html {
 
 header {
 	display: block;
-	position: fixed;
+	/*position: fixed;*/
 	width: 100%;
 	text-align: center;
 	color: white;
 	transition: .4s;
 	background: green;
+	font-family: 'Arial';
+    font-size: 16px;
 }
 
 header a:hover {
 	cursor: pointer;
 	color: white;
-	font-family: 'Arial';
-    font-size: 16px;
+	
 }
 
 header img{
