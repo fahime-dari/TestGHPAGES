@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Calendrier | Aubusson Felletin Basket</title>
+	<head> 
+		<!-- titre/meta -->
+		<title>Accueil | Aubusson Felletin Basket</title>
 		<meta charset="utf-8">
+		
+		<!-- link -->
 		<link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
+		<link rel="icon" href="./images/logo.jpg" type="image/logo">
+		<script src="https://kit.fontawesome.com/ec5ce09376.js" crossorigin="anonymous"></script>
 	</head>
 	
 	<body class="bg-success">
 	
-		<!-- Entête -->
+		<!-- entete -->
 		<nav class=" navbar text-center text-white navbar-expand-lg bg-success">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="javascript:void(0)" ><img src="images/logo.png" class="rounded-circle" ></a>
+				<a class="navbar-brand" a href="index.html">
+					<img src="./images/logo.jpg" class="rounded-circle w-75">
+				</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					
 				<ul class="nav navbar-nav ml-auto w-100">
 					<li class="nav-item active">
-						<a class="nav-link link-light" href="accueil.html">Accueil</a>
+						<a class="nav-link link-light" href="index.html">Accueil</a>
 					</li>
 					<li class="nav-item ">
 						<a class="nav-link link-light" href="calendrier.html">Calendrier</a>
@@ -33,19 +40,21 @@
 						<a class="nav-link link-light" href="contact.html">Contact</a>
 					</li>
 				</ul>
-				
+
 				<form class="d-flex">
 					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
 					<button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
 				</form>
 			</div>
 		</nav>
-		
 		<!-- Social media -->
 		<nav>
 			<div class="text-center p-3 bg-dark" style="background-color: rgba(0, 0, 0, 0.2);">
 				<a class="btn btn-outline-light btn-floating m-1 btn-social" href="https://www.facebook.com/AubussonFelletinBasket" role="button">
 					<span class="fab fa-facebook-f"></span>
+				</a>
+				<a class="btn btn-outline-light btn-floating m-1 btn-social" href="https://www.facebook.com/AubussonFelletinBasket" role="button">
+					<i class="fa-brands fa-instagram"></i>
 				</a>
 			</div>
 		</nav>
@@ -53,16 +62,44 @@
 		<div id='droite'>
 			<center>
 			<br>
-				<h2> Calendrier des matchs</h2>
-				<!--<img src = "images/maintenance.png" alt = "maintenance" />-->
+			<h2> Calendrier des matchs</h2>
+			<blockquote>Ici, vous retrouverez les résultats ainsi que nos prochains matchs à venir ! </blockquote>
+			<!--<img src = "images/maintenance.png" alt = "maintenance" />-->
 				<!--Widget Calendrier-->
 	
-				<iframe src="https://www.besport.com/widget/group-calendar/221624" style="width:100%;height:600px;max-width:800px;max-height:80vh;">
+			<iframe src="https://www.besport.com/widget/group-calendar/221624" style="width:100%;height:600px;max-width:800px;max-height:80vh;" class="rounded"></iframe>
 			</center>
 		</div>
 	
 	
 	<script type="text/javascript" src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
-	</body>
-	
+
+			<!-- Partenaire -->
+			<div class=" p-5 bg-light text-black ">
+				<center>
+					<h1>Sponsors et Partenaires</h1><br> 
+					<img src="images/logoCA.png" alt="Credit Agricol logo" class="w-1"> 
+					<img src="images/logoAubusson.png" alt="Credit Agricol logo" class="w-1"> 
+					<img src="images/ffbblogo.png" alt="Credit Agricol logo" class="w-1">
+					<img src="images/ComiDepBasket.png" alt="Credit Agricol logo" class="w-1"> 
+				</center>
+				</div>
+		
+	<!-- Footer -->
+	<footer class="bg-dark text-center text-white">
+		<div class="container p-4 pb-0">
+			<!-- Section: Social media -->
+			<section class="mb-4">
+				<p>Je sais pas quoi mettre pour le moment :) !</p>
+			</section>
+		</div>
+
+		<!-- Copyright -->
+		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+			© 2023 Copyright : A.F.B Basket
+		</div>
+	</footer>
+
+<script type="text/javascript" src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
