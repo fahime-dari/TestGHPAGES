@@ -24,15 +24,14 @@
 /* Header top */
 .header-top {
     display: flex;
-    /*padding: 20px 30px;*/
     background: #198754;
 }
   
-.header-top  p {
+.header-top .hd-title p {
     color: white;
     font-size: xx-large;
     font-weight: bold;
-    margin-left: 0;
+    margin-left: 295px;
     margin-bottom: 14px;
 }
 
@@ -163,13 +162,14 @@ a.animated-button.victoria-four:hover:after {
 
 /* header logo */
 .hd-logo img {
-    margin-left: 65px;
+    margin-left: 100px;
     display: flex;
     position: absolute;
     border-radius: 30px;
     margin-top: -88px;
     width: 80px;
 }
+
 
 /* social network*/
 .ressociaux {
@@ -295,4 +295,55 @@ footer .ft-legal p{
     margin-bottom: 0;
     text-align: center;
     padding: 10px;
+}
+
+
+/* Page contact */
+
+.contact-title h2{
+    font-size: 23px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    line-height: 1;
+    display: inline-block;
+    margin-bottom: 21px;
+
+}
+
+.contact-title h2::before{
+    content: "ll";
+    letter-spacing: 1px;
+    margin-right: 10px;
+    text-transform: none;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: #c5c5c5;
+}
+
+.deuxieme-partie container{
+    padding-top: 60px;
+    margin: 0 79px;
+    text-decoration: none;
+}
+
+.deuxieme-partie container h3{
+    font-size: 21px;
+}
+
+.deuxieme-partie container p{
+    font-size: 13px;
+    color:#808080;
+    font-weight: bold;
+}  
+
+.dirigeants p{
+    color:#808080;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color:#808080;
+    font-weight: bold;
 }
