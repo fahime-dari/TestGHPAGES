@@ -1,0 +1,493 @@
+html {
+    height: 100%;
+}
+
+/* ====== Scrollbar CSS ====== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #198754 #000000;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 13px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #198754;
+    border-radius: 10px;
+    border: 3px solid #000000;
+} 
+
+/* ====== Header ====== */
+/* Header top */
+.header-top {
+    display: flex;
+    background: #198754;
+}
+  
+.header-top .hd-title p {
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-left: 295px;
+    margin-bottom: 14px;
+}
+
+/* Header main */
+.header-main {
+    background: #136840;
+    display: block;
+}
+  
+.header-main .button {
+    margin-left: 310px;
+    margin-right: 310px;
+    font-family: sans-serif;
+}  
+  
+.header-main ul {
+    margin-left: -32px;
+    margin-bottom: 0;
+}
+  
+ ul li {
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    position: relative;
+    margin-left: -5px;
+  
+}
+  
+.header-main ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: all .2s;
+    /*background: red;*/
+}
+  
+.header-main li ul {
+    position: absolute;
+    /*top: 43px;*/
+    /*margin-top: 0;
+    padding: 5px 10px;*/
+    /* left: -50%; */
+    left: -9999px;
+    width: 210px;
+    /*opacity: 0;
+    transform: translateY(50px);*/
+    margin-left: 10px;
+  
+}
+  
+.header-main li ul li {
+    text-align: center;
+    display: block;
+    background: linear-gradient(45deg, #136840, #198754);
+}
+  
+.header-main li ul li:hover {
+    opacity: .8;
+}
+  
+.header-main li:hover > ul {
+    left: -50%;
+    transform: translateY(0);
+    opacity: 1;
+}
+  
+/* animation button*/
+a.animated-button:link:after, a.animated-button:visited:after {
+    content: "";
+    position: absolute;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    width: 150%;
+    z-index: -1;
+    -webkit-transition: all 0.75s ease 0s;
+    -moz-transition: all 0.75s ease 0s;
+    -o-transition: all 0.75s ease 0s;
+    transition: all 0.75s ease 0s;
+}
+  
+a.animated-button:link, a.animated-button:visited {
+    position: sticky;
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    padding: 5px 22px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 0;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    flex-flow: row wrap;
+    overflow: hidden;
+    letter-spacing: .08em;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+  
+a.animated-button.victoria-four:after {
+    background: #D24D57;
+    opacity: .5;
+    -moz-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+    -ms-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+    -webkit-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+    transform: translateY(-50%) translateX(-50%) rotate(90deg);
+}
+  
+a.animated-button.victoria-four:hover:after {
+    opacity: 1;
+    height: 600% !important;
+}
+
+/* header logo */
+.hd-logo img {
+    margin-left: 100px;
+    display: flex;
+    position: absolute;
+    border-radius: 30px;
+    margin-top: -88px;
+    width: 80px;
+}
+
+/* ====== social network ====== */
+.ressociaux {
+    margin-top: 15%;
+    position: fixed;
+    right: 0;
+    /*top: 150px;*/
+}
+  
+.ressociaux a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    color: #fff;
+    opacity: 0.75;
+    transition: opacity 0.15s linear;
+    text-decoration: none;
+}
+  
+.ressociaux a:hover {
+    opacity: 1;
+}
+
+/* facebook */
+.facebook {
+    background: #3b5998;
+}
+
+/* instagram */
+.instagram {
+    background: #ac2bac;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====== corps localisation ====== */
+.corp_localis_index {
+    text-align: center;
+	align-items: center;
+    background-image: url(images/fond_index.jpg);
+}
+
+.corp_localis_index .titl_localis_index {
+    margin-left: 100px;
+    margin-right: 100px;
+    color: white;
+}
+
+.corp_localis_index .titl_localis_index h1 {
+    font-weight:bold;
+	font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 2%;
+}
+
+.corp_localis_index .titl_localis_index .batiment_localis_index .col_local_bat_index1 iframe {
+    margin: 2%;
+    margin-bottom: 3%;
+}
+
+.corp_localis_index .titl_localis_index .batiment_localis_index .col_local_bat_index1 {
+    column-count: 2;
+}
+
+.corp_localis_index .titl_localis_index .batiment_localis_index .col_local_bat_index2 {
+    column-count: 1;
+}
+
+/* ====== corps page reseaux sociaux ====== */
+.corp_res_soc_index {
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+	align-items: center;
+    margin-bottom: 3%;
+}
+
+.corp_res_soc_index .titl_res_soc_index h1 {
+    font-weight:bold;
+	font-size: 40px;
+    font-weight: 500;
+	margin-bottom: 3%;
+}
+
+/* ====== corps sponsors partenaires index ====== */
+/* titre et couleur background */
+.corp_sp_part_index {
+    background-color: #e6e6e6;
+    text-align: center;
+	align-items: center;
+}
+
+.corp_sp_part_index .titl_sp_part_index h1 {
+    font-weight:bold;
+	font-size: 40px;
+    font-weight: 500;
+	margin-bottom: 3%;
+}
+
+.corp_sp_part_index .titl_sp_part_index h1 span {
+    color: #136840;
+}
+
+/* images sponsors partenaires index */
+.corp_sp_part_index .titl_sp_part_index .img_sp_part_index {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.corp_sp_part_index .titl_sp_part_index .img_sp_part_index img {
+    margin: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+    bottom: 0;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+footer .ft-top {
+    padding: 12px;
+    background: #393939;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    
+}
+
+footer .ft-top hr {
+    margin-left: 220px;
+    margin-right: 220px;
+}
+
+footer .ft-top .ft-top-button {
+    margin-left: 48px;
+    display: block;
+    text-decoration: none;
+    color: rgb(216, 216, 216);
+    padding: 10px 0 20px 0;
+}
+
+footer .ft-top .ft-top-button a{
+    text-decoration: none;
+    color: rgb(216, 216, 216);
+    padding: 30px;
+}
+
+footer .ft-main{
+    background: #26272b;
+    color: #fff;
+}
+
+footer .ft-legal p{
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+/* ====== Footer ====== */
+/* Footer main 
+footer {
+    bottom: 0;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+footer .ft-top {
+    padding: 12px;
+    background: #393939;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    
+}
+
+footer .ft-top hr {
+    margin-left: 220px;
+    margin-right: 220px;
+}
+
+footer .ft-top .ft-top-button {
+    margin-left: 48px;
+    display: block;
+    text-decoration: none;
+    color: rgb(216, 216, 216);
+    padding: 10px 0 20px 0;
+}
+
+footer .ft-top .ft-top-button a{
+    text-decoration: none;
+    color: rgb(216, 216, 216);
+    padding: 30px;
+}
+
+footer .ft-main .ft-legal .ft-top-button a{
+    text-decoration: none;
+    color: rgb(216, 216, 216);
+}
+*/
+
+
+
+/*
+footer {
+    bottom: 0;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+footer .ft-top {
+    
+    background: #393939;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+ footer main 
+footer .ft-legal p{
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+footer .ft-main{
+    background: #26272b;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+}*/
+
+/* footer main logo reseau soc 
+footer .ft-main .ft-legal .ft-top-button a{
+    text-decoration: none;
+    color: rgb(216, 216, 216);
+}*/
+
+footer .ft-main .ft-legal .col_ft_rsoc {
+  column-count: 2;
+}
+
+footer .ft-main .ft-legal .col_ft_rsoc .rs_index_footer {
+    text-align: center;
+}
