@@ -172,6 +172,7 @@ a.animated-button.victoria-four:hover:after {
     margin-top: 15%;
     position: fixed;
     right: 0;
+    z-index: 3;
     /*top: 150px;*/
 }
   
